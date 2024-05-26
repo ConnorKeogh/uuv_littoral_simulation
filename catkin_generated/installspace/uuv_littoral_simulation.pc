@@ -1,0 +1,8 @@
+prefix=/home/ck/catkin_ws/install
+
+Name: uuv_littoral_simulation
+Description: Description of uuv_littoral_simulation
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
