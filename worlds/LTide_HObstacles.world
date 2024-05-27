@@ -41,6 +41,14 @@
     <include>
       <uri>model://vessel_g</uri>
       <pose>20 0.6 -8 -0.7 -0.1 0.1</pose>
+      <plugin name="BuoyancyPlugin" filename="libBuoyancyPlugin.so">
+        <!-- a viscous liquid -->
+        <fluid_density>2000</fluid_density>
+        <link name="body">
+          <center_of_volume>1 2 3</center_of_volume>
+          <volume>50</volume>
+        </link>
+        </plugin>
     </include>
     
     <include>
@@ -62,6 +70,14 @@
      <include>
         <uri>model://boat</uri>
       </include>
+      <plugin name="BuoyancyPlugin" filename="libBuoyancyPlugin.so">
+        <!-- a viscous liquid -->
+        <fluid_density>500</fluid_density>
+        <link name="body">
+          <center_of_volume>1 2 3</center_of_volume>
+          <volume>50</volume>
+        </link>
+        </plugin>
                <!-- add new camera -->
       <link name='camera'>
         <pose>0 -0.01 2.0 1.91986 0 1.57</pose>
